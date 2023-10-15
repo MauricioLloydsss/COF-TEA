@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".placeOrderCustomer">
+
+    <FrameLayout
+        android:id="@+id/Frame1"
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_marginTop="20dp"
+        android:background="#D3D3D3"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="182dp">
+
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:layout_marginTop="480dp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="1dp" />
+        <TextView
+            android:id="@+id/ItemsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="130dp"
+            android:layout_below="@id/ProductQty"
+            android:textSize="30dp"
+            android:text="Item's Name" />
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:background="@color/black"
+        android:layout_below="@id/Nata"
+        android:text="Add To Cart"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/productsSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Size" />
+
+    <CheckBox
+        android:id="@+id/Pearl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddsOn"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Pearl"/>
+
+    <CheckBox
+        android:id="@+id/EspressoShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Pearl"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Espresso Shot"/>
+
+    <CheckBox
+        android:id="@+id/Nata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EspressoShot"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nata"/>
+    <TextView
+        android:id="@+id/AddsOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/ProductQty"
+        android:textSize="20dp"
+        android:text="Add's On:" />
+
+    <EditText
+        android:id="@+id/ProductQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/productsSize"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Quantity" />
+
+</RelativeLayout>
